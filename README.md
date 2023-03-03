@@ -10,7 +10,7 @@ The first step is to install *zsh* and change the default shell from *bash* to *
 
 ```bash
 sudo apt update && sudo apt install zsh
-sudo chsh -s /bin/zsh
+chsh -s /bin/zsh
 ```
 
 ## Custom Font
@@ -71,4 +71,13 @@ It provides syntax highlighting. To install it:
 
 ```zsh
 sudo apt install zsh-syntax-highlighting
+```
+
+## Copy dotfiles
+
+The last step is to copy the files .zshrc and .p10k.zsh in the home directory:
+
+```zsh
+cp .zshrc ~/
+cp .p10k.zsh ~/
 ```
