@@ -109,12 +109,23 @@ alias grep="grep --color=auto"
 alias diff="diff --color=auto"
 alias ll="ls -l"
 alias la="ls -la"
-command -v lsd >/dev/null && alias ls="lsd --group-dirs first"
-alias ip="ip --color=auto"
-alias dirbuster="source /opt/dirbuster/DirBuster-1.0-RC1.sh"
-alias cat="batcat"
-# command -v batcat >/dev/null && alias cat="batcat --pager=never"
 
+command -v lsd >/dev/null && alias ls="lsd --group-dirs first"
+command -v colorls > /dev/null && alias ls='colorls --sd --gs' && \
+	alias tree='colorls --tree'
+
+alias ip="ip --color=auto"
+
+### CAT & LESS
+command -v bat > /dev/null && \
+	alias bat='bat --theme=ansi' && \
+	alias cat='bat --pager=never' && \
+	alias less='bat'
+# in debian the command is batcat
+command -v batcat > /dev/null && \
+	alias batcat='batcat --theme=ansi' && \
+	alias cat='batcat --pager=never' && \
+	alias less='batcat'
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
