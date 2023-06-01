@@ -4,7 +4,17 @@ Customized zsh terminal for Linux.
 
 ![terminal screenshot](screenshots/terminal.png)
 
-## ZSH
+## Automatic Installation
+
+The easiest way to customize your terminal is by executing the file *install.sh*:
+
+```bash
+./install.sh
+```
+
+## Manual Installation
+
+### ZSH
 
 The first step is to install *zsh* and change the default shell from *bash* to *zsh*:
 
@@ -13,7 +23,7 @@ sudo apt update && sudo apt install zsh
 chsh -s /bin/zsh
 ```
 
-## Custom Font
+### Custom Font
 
 It is recommended to install the *Hack Nerd Font* on your system.
 
@@ -30,7 +40,7 @@ mkdir -p ~/.fonts
 unzip Hack.zip -d ~/.fonts
 ```
 
-## LSD
+### LSD
 
 lsd is the next gen ls command. To install it:
 
@@ -38,7 +48,7 @@ lsd is the next gen ls command. To install it:
 sudo apt install lsd
 ```
 
-## BAT
+### BAT
 
 Bat is a cat clone with syntax-highlighting and Git integration. To install it:
 
@@ -46,7 +56,7 @@ Bat is a cat clone with syntax-highlighting and Git integration. To install it:
 sudo apt install bat
 ```
 
-## POWERLEVEL10k
+### POWERLEVEL10k
 
 It creates a custom colorized prompt.
 
@@ -57,7 +67,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git
 sudo mv powerlevel10k /usr/share
 ```
 
-## Autosuggestions
+### Autosuggestions
 
 It shows suggestions while typing. To install it:
 
@@ -65,7 +75,7 @@ It shows suggestions while typing. To install it:
 sudo apt install zsh-autosuggestions
 ```
 
-## Syntax Highlighting
+### Syntax Highlighting
 
 It provides syntax highlighting. To install it:
 
@@ -73,7 +83,7 @@ It provides syntax highlighting. To install it:
 sudo apt install zsh-syntax-highlighting
 ```
 
-## Copy dotfiles
+### Copy dotfiles
 
 The last step is to copy the files .zshrc and .p10k.zsh in the home directory:
 
